@@ -5,30 +5,31 @@ import (
 )
 
 const (
-	CodeSuccess           = "SUCCESS"
-	CodeUpdated           = "UPDATED"
-	CodeBadLogin          = "BAD-LOGIN"
-	CodeInvalidToken      = "INVALID-TOKEN"
-	CodeAlreadyExists     = "ALREADY-EXISTS"
-	CodeDoesNotExist      = "DOES-NOT-EXIST"
-	CodeInvalidJSON       = "INVALID-JSON"
-	CodeValidationFailed  = "VALIDATION-FAILED"
-	CodeInternalError     = "INTERNAL-ERROR"
-	CodeNotImplemented    = "NOT-IMPLEMENTED"
+	CodeCustomError      = "CUSTOM-ERROR"
+	CodeSuccess          = "SUCCESS"
+	CodeUpdated          = "UPDATED"
+	CodeBadLogin         = "BAD-LOGIN"
+	CodeInvalidToken     = "INVALID-TOKEN"
+	CodeAlreadyExists    = "ALREADY-EXISTS"
+	CodeDoesNotExist     = "DOES-NOT-EXIST"
+	CodeInvalidJSON      = "INVALID-JSON"
+	CodeValidationFailed = "VALIDATION-FAILED"
+	CodeInternalError    = "INTERNAL-ERROR"
+	CodeNotImplemented   = "NOT-IMPLEMENTED"
 )
 
 var (
 	messageCodeMapping = map[string]string{
-		CodeBadLogin:          "Bad username or password",
-		CodeInvalidToken:      "Invalid Token",
-		CodeSuccess:           "Success",
-		CodeAlreadyExists:     "Resource already exists",
-		CodeInvalidJSON:       "Invalid JSON Format",
-		CodeUpdated:           "Resource updated",
-		CodeValidationFailed:  "Field validation failed",
-		CodeInternalError:     "An internal error occured",
-		CodeDoesNotExist:      "Resource does not exist",
-		CodeNotImplemented:    "Feature is not implemented yet",
+		CodeBadLogin:         "Bad username or password",
+		CodeInvalidToken:     "Invalid Token",
+		CodeSuccess:          "Success",
+		CodeAlreadyExists:    "Resource already exists",
+		CodeInvalidJSON:      "Invalid JSON Format",
+		CodeUpdated:          "Resource updated",
+		CodeValidationFailed: "Field validation failed",
+		CodeInternalError:    "An internal error occured",
+		CodeDoesNotExist:     "Resource does not exist",
+		CodeNotImplemented:   "Feature is not implemented yet",
 	}
 )
 
